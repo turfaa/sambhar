@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item>1 گھنٹہ</item>
+        <item>%d گھنٹے</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item>1منٹ</item>
+        <item>%dمنٹ</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item>پہلا</item>
+        <item>%dسیکنڈ</item>
+    </plurals>
+</resources>

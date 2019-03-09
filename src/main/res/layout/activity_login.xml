@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_login_root" android:tag="layout/activity_login_0" android:background="@drawable/login_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="200dp" android:layout_height="200dp" android:layout_marginBottom="16dp" android:src="@drawable/login_logo"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/red" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="30dp" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_mail"/>
+            </RelativeLayout>
+            <com.sambhar.sambharappreport.base.view.ShambarEditText android:textColor="@color/black" android:id="@+id/et_email" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:hint="USERNAME" app:fontName="2"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/red" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="30dp" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_lock"/>
+            </RelativeLayout>
+            <com.sambhar.sambharappreport.base.view.ShambarEditText android:textColor="@color/black" android:id="@+id/et_password" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:hint="PASSWORD" android:inputType="textPassword" app:fontName="2"/>
+        </LinearLayout>
+        <com.sambhar.sambharappreport.base.view.ShambarButton android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_login" android:background="#ff7575" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="LOGIN" app:fontName="1"/>
+        <com.sambhar.sambharappreport.base.view.ShambarButton android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_register" android:background="#000000" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="REGISTER" app:fontName="1"/>
+        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Version 1.5" app:fontName="1"/>
+    </LinearLayout>
+</RelativeLayout>

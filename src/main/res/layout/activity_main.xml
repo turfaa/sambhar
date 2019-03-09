@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_main_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Instagram"/>
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/tv_instagram_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Facebook"/>
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/tv_facebook_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Twitter"/>
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/tv_twitter_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_image" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginBottom="16dp"/>
+        <EditText android:id="@+id/et_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:hint="Caption"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_image" android:background="@color/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="Take Picture" android:layout_weight="1"/>
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/bt_video" android:background="@color/button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="Take Video" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/bt_share_ig" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Share Instagram"/>
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/bt_share_facebook" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Share Facebook"/>
+            <Button android:layout_gravity="center_horizontal" android:id="@+id/bt_share_twitter" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Share Twitter"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

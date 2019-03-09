@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_home_root" android:tag="layout/activity_home_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_share_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/instagram_container" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_ui_instagram" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="INSTAGRAM" android:layout_centerHorizontal="true" app:fontName="1"/>
+            <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/tv_instagram_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_ui_instagram" android:layout_centerHorizontal="true" app:fontName="3"/>
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/facebook_container" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_ui_facebook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="FACEBOOK" android:layout_centerHorizontal="true" app:fontName="1"/>
+            <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/tv_facebook_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_ui_facebook" android:layout_centerHorizontal="true" app:fontName="3"/>
+        </RelativeLayout>
+        <RelativeLayout android:background="@color/twitter_container" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_ui_twitter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="TWITTER" android:layout_centerHorizontal="true" app:fontName="1"/>
+            <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/tv_twitter_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_ui_twitter" android:layout_centerHorizontal="true" app:fontName="3"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="@color/grey" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_photo"/>
+        <ImageView android:id="@+id/iv_image" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kirim materi" app:fontName="3"/>
+        <com.sambhar.sambharappreport.base.view.ShambarEditText android:id="@+id/et_caption" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Caption" android:maxLines="1" app:fontName="3"/>
+        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Url Re-Share" app:fontName="3"/>
+        <com.sambhar.sambharappreport.base.view.ShambarEditText android:id="@+id/et_url_reshare" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Url Re-Share" app:fontName="3"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sambhar.sambharappreport.base.view.ShambarButton android:textColor="@color/white" android:id="@+id/bt_image" android:background="@color/red" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TAKE PICTURE" android:layout_weight="1" app:fontName="3"/>
+        <com.sambhar.sambharappreport.base.view.ShambarButton android:textColor="@color/white" android:id="@+id/bt_video" android:background="@color/darker_red" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TAKE VIDEO" android:layout_weight="1" app:fontName="3"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/bt_share_ig" android:background="@color/instagram_container" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_instagram"/>
+            <com.sambhar.sambharappreport.base.view.ShambarTextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHARE ON INSTAGRAM" app:fontName="2"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/bt_share_facebook" android:background="@color/facebook_container" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_facebook"/>
+            <com.sambhar.sambharappreport.base.view.ShambarTextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHARE ON FACEBOOK" app:fontName="2"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/bt_share_twitter" android:background="@color/twitter_container" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" app:srcCompat="@drawable/ic_twitter"/>
+            <com.sambhar.sambharappreport.base.view.ShambarTextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SHARE ON TWITTER" app:fontName="2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

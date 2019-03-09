@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_register_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_register_root" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_top" android:background="@color/red" android:layout_width="match_parent" android:layout_height="140dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-48dp" android:layout_below="@+id/ll_top">
+                <android.support.v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+                    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Username" app:fontName="2"/>
+                        <com.sambhar.sambharappreport.base.view.ShambarEditText android:textSize="14sp" android:id="@+id/et_username" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:hint="Username"/>
+                        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Password" app:fontName="2"/>
+                        <com.sambhar.sambharappreport.base.view.ShambarEditText android:textSize="14sp" android:id="@+id/et_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:hint="Password" android:inputType="textPassword"/>
+                        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Propinsi" app:fontName="2"/>
+                        <com.sambhar.sambharappreport.base.view.ShambarEditText android:textSize="14sp" android:id="@+id/et_province" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:hint="Propinsi"/>
+                        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Group" app:fontName="2"/>
+                        <com.sambhar.sambharappreport.base.view.ShambarEditText android:textSize="14sp" android:id="@+id/et_group" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:hint="Group"/>
+                        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Facebook" app:fontName="2"/>
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp">
+                            <com.sambhar.sambharappreport.base.view.ShambarTextView android:id="@+id/tv_title_facebook" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <com.sambhar.sambharappreport.base.view.ShambarEditText android:textSize="14sp" android:id="@+id/et_facebook" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Facebook"/>
+                        </LinearLayout>
+                        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Twitter" app:fontName="2"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.sambhar.sambharappreport.base.view.ShambarTextView android:id="@+id/tv_title_twitter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <com.sambhar.sambharappreport.base.view.ShambarEditText android:textSize="14sp" android:id="@+id/et_twitter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:hint="Twitter"/>
+                        </LinearLayout>
+                        <com.sambhar.sambharappreport.base.view.ShambarTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Instagram" app:fontName="2"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.sambhar.sambharappreport.base.view.ShambarTextView android:id="@+id/tv_title_instagram" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <com.sambhar.sambharappreport.base.view.ShambarEditText android:textSize="14sp" android:id="@+id/et_instagram" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:hint="Instagram"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <com.sambhar.sambharappreport.base.view.ShambarButton android:textColor="@color/white" android:id="@+id/bt_register" android:background="@color/red" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:text="REGISTER"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

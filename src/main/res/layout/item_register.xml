@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_register_item" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.sambhar.sambharappreport.base.view.ShambarTextView android:id="@+id/tv_item_register" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontName="2"/>
+    </LinearLayout>
+    <View android:background="@color/grey" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>
